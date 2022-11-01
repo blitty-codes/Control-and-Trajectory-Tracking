@@ -14,21 +14,31 @@ public:
    * TODO: Create the PID class
    **/
 
+
     /*
     * Errors
     */
+	float curr_cte;
+  	float prev_cte;
+  	float int_cte;
 
     /*
     * Coefficients
     */
-
+	double tau_p;
+  	double tau_d;
+  	double tau_i;
+  
     /*
     * Output limits
     */
+  	double output_lim_max;
+  	double output_lim_min;
   
     /*
     * Delta time
     */
+  	double delta_time;
 
     /*
     * Constructor
