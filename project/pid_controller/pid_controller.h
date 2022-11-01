@@ -10,35 +10,30 @@
 class PID {
 public:
 
-   /**
-   * TODO: Create the PID class
-   **/
-
-
     /*
     * Errors
     */
-	float curr_cte;
-  	float prev_cte;
-  	float int_cte;
+    double current_cte;
+    double int_cte;
+    double prev_cte;
 
     /*
     * Coefficients
     */
-	double tau_p;
-  	double tau_d;
-  	double tau_i;
-  
+    double tau_p;
+    double tau_i;
+    double tau_d;
+
     /*
     * Output limits
     */
-  	double output_lim_max;
-  	double output_lim_min;
+    double output_lim_max;
+    double output_lim_min;
   
     /*
     * Delta time
     */
-  	double delta_time;
+    double delta_time;
 
     /*
     * Constructor
@@ -72,5 +67,4 @@ public:
 };
 
 #endif //PID_CONTROLLER_H
-
 
